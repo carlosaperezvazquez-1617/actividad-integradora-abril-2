@@ -1,0 +1,11 @@
+Resources:
+  S3BucketStaticContent:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: spotify-clone-assets-unique-id
+
+  AppInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c55b159cbfafe1f0 # Amazon Linux 2 (Ejemplo)
